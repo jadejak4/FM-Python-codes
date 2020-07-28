@@ -1,0 +1,23 @@
+lst=list()
+for x in range(0,3):
+    str=input("Enter the timings\n")
+    lst.append(str)
+lmao=list()
+for y in lst:
+    str=y
+    mm=int(str[:2])
+    ss=int(str[4:5])
+    ms=int(str[6:10])
+    lol=(mm*60000)+(ss*1000)+ms
+    lmao.append(lol)
+
+if(lmao[0]<lmao[1]):
+    if(lmao[0]<lmao[2]):
+        print(lst[0])
+    else:
+        print(lst[2])
+else:
+    if(lmao[1]<lmao[2]):
+        print(lst[1])
+    else:
+        print(lst[2])
