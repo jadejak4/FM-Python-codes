@@ -1,0 +1,13 @@
+
+m=int(input("Enter int"))
+n=int(input("Enter int"))
+diff=0
+if(m>n):
+    while(n<m):
+        diff=diff+1
+        n=n+1
+if(n>m):
+    while(m<n):
+        diff=diff+1
+        m=m+1
+print(diff)
