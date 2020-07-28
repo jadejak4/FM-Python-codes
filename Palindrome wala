@@ -1,0 +1,5 @@
+string=input("Enter integer")
+if(string==string[::-1]):     \\\Related to String splicing 
+    print("Palindrome")
+else:
+    print("Not a palindrome")
