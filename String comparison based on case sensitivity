@@ -1,0 +1,8 @@
+str=input("Enter the a string")
+str1=input("Enter another string")
+flag=0
+if(str1==str):
+    flag=1
+    print("Strings are case sensitive equal")
+if(str.lower()==str1.lower() and flag==0):
+    print("Strings are case insensitive equal")
