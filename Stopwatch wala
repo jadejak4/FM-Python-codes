@@ -1,0 +1,27 @@
+import time
+def AE():
+    start=time.time()
+    n=int(input("Enter 1 to stop"))
+    if(n==1):
+        end=time.time()
+        print("The time taken for that event was",(end-start))
+
+def EE():
+    start=time.time()
+    while True:
+        n=int(input("Enter 1 to record lap time and 2 for stop endurance event"))
+        if(n==1):
+            end=time.time()
+            print("The time taken for that event was",(end-start))
+            start=end
+        if(n==2):
+            break
+
+while True:
+    a=int(input("Enter 1 or 2 to define which type of event"))
+    if(a==1):
+        AE()
+    if(a==2):
+        EE()
+    if(a==0):
+        break
