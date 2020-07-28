@@ -1,0 +1,17 @@
+lst=list()
+for x in range(0,3):
+    str=input("Enter the timings\n")
+    lst.append(str)
+lmao=list()
+for y in lst:
+    str=y
+    mm=int(str[:2])
+    ss=int(str[4:5])
+    ms=int(str[6:10])
+    lol=(mm*60000)+(ss*1000)+ms
+    lmao.append(lol)
+rofl=dict()
+for x in range(0,3):
+    rofl[lmao[x]]=lst[x]
+Keymax = min(rofl, key=rofl.get)
+print(rofl[Keymax]
