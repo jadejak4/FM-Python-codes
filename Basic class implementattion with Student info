@@ -1,0 +1,15 @@
+class student:
+    def __init__(self,name,reg_no,branch):
+        self.name=name
+        self.reg_no=reg_no
+        self.branch=branch
+    def intro(self):
+        print(self.name,"with the registration number",self.reg_no,"of",self.branch)
+
+class MIT:
+    Krishna=student("Krishna",190907282,"ECE")
+    Arya=student("Arya",190907382,"ECE")
+    Shuvam=student("Shuvam",190905482,"CSE")
+    Krishna.intro()
+    Arya.intro()
+    Shuvam.intro()
