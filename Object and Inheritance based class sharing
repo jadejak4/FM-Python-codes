@@ -1,0 +1,32 @@
+OBJECT BASED
+
+class print_intro:
+    def intro(self):
+        print("I am a student of MIT")
+class print_hw:
+    def __init__(self):
+        print("Hello World")
+    def main():
+        obj1=print_intro()
+        obj1.intro()
+    if __name__ == '__main__':
+        main()
+
+obj2=print_hw()
+
+INHERITANCE BASED
+class print_intro:
+    def intro(self):
+        print("I am a student of MIT")
+class INTRO(print_intro):
+    pass
+class print_hw:
+    def __init__(self):
+        print("Hello World")
+    def main():
+        obj1=INTRO()
+        obj1.intro()
+    if __name__ == "__main__":
+        main()
+
+obj2=print_hw()
